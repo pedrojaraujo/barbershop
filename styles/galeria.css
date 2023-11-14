@@ -1,0 +1,142 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.galeria{
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30em;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: #f0bf80;
+}
+
+.galeria_titulo{
+    margin-top: -150px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    background-color: #c09967;
+
+    height: 105px;
+    width: 100%;
+}
+
+.galeria_titulo p {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+
+    font-size: 3.2em;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual_navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation_auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation_auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation_auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation_auto .auto-btn1{
+    background-color: #fff;
+}
+
+
+#radio2:checked ~ .navigation_auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation_auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation_auto .auto-btn4{
+    background-color: #fff;
+}
